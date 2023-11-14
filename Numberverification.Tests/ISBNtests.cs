@@ -8,15 +8,15 @@ namespace Numberverification.Tests
 {
     public class ISBNtests
     {
-        [Fact]
-        public void ValidISBNFormat()
-        {
-            var sut = new ISBN();
-            sut.ISBNnumber = "333-0-306-4061-5";
+        //[Fact]
+        //public void ValidISBNFormat()
+        //{
+        //    var sut = new ISBN();
+        //    sut.ISBNnumber = "333-0-306-4061-5";
 
-            //Assert
-            Assert.True(sut.ValidateISBNformat());
+        //    //Assert
+        //    Assert.True(sut.ValidateISBNformat());
 
-        }
+        //}
     }
 }

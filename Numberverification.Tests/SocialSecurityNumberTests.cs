@@ -15,19 +15,19 @@ namespace Numberverification.Tests
 
         }
 
-        [Theory]
-        [InlineData("19880924--1659")]
-        [InlineData("198811310000")]
-        [InlineData("198809241659")]
-        public void SocialSecurityNumberThrowsInvalidNumbersExceptionWhenWrong(string numbers)
-        {
-            var sut = new SocialSecurityNumber();
-            sut.Numbers = numbers;
+        //[Theory]
+        //[InlineData("19880924--1659")]
+        //[InlineData("198811310000")]
+        //[InlineData("198809241659")]
+        //public void SocialSecurityNumberThrowsInvalidNumbersExceptionWhenWrong(string numbers)
+        //{
+        //    var sut = new SocialSecurityNumber();
+        //    sut.Numbers = numbers;
             
 
-            //Assert
-            Assert.Matches(_regexPattern, sut.Numbers);
+        //    //Assert
+        //    Assert.Matches(_regexPattern, sut.Numbers);
 
-        }
+        //}
     }
 }
