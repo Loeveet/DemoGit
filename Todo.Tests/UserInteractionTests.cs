@@ -116,59 +116,59 @@ namespace Todo.Tests
             Assert.NotNull(result);
         }
 
-        //        [Fact]
-        //        public void GetTodoItemByIndex_IndexOutOfRange_ThrowsException()
-        //        {
-        //            // Arrange
-        //            var todoListStorageMock = new Mock<IStorage>();
-        //            var todoListService = new TodoList(todoListStorageMock.Object);
+        [Fact]
+        public void GetTodoItemByIndex_IndexOutOfRange_ThrowsException()
+        {
+            // Arrange
+            var todoListStorageMock = new Mock<IStorage>();
+            var todoListService = new TodoList(todoListStorageMock.Object);
 
-        //            todoListStorageMock.Setup(x => x.GetAllTodos()).Returns(new List<TodoItem>
-        //     {
-        //         new TodoItem {  },
-        //         new TodoItem {  },
-        //         new TodoItem {  }
-        //     });
+            todoListStorageMock.Setup(x => x.GetAllTodos()).Returns(new List<TodoItem>
+             {
+                 new TodoItem {  },
+                 new TodoItem {  },
+                 new TodoItem {  }
+             });
 
-        //            // Act and Assert
-        //            Assert.Throws<InvalidOperationException>(() => todoListService.GetTodoItemByIndex(5));
-        //        }
-        //        [Fact]
-        //        public void GetInputWorksWhenUserInputsInt()
-        //        {
-        //            // Arrange
-        //            var mock = new Mock<IConsoleWrapper>();
-        //            var expected = "42";
-        //            mock.SetupSequence(x => x.ReadLine())
-        //                .Returns(expected);
-        //            var sut = new UserInteractionWrapper(mock.Object);
+            // Act and Assert
+            Assert.Throws<InvalidOperationException>(() => todoListService.GetTodoItemByIndex(5));
+        }
+        [Fact]
+        public void GetInputWorksWhenUserInputsInt()
+        {
+            // Arrange
+            var mock = new Mock<IConsoleWrapper>();
+            var expected = "42";
+            mock.SetupSequence(x => x.ReadLine())
+                .Returns(expected);
+            var sut = new UserInteractionWrapper(mock.Object);
 
-        //            // Act
-        //            var actual = sut.GetIntInput("Ange ett heltal:");
+            // Act
+            var actual = sut.GetIntInput("Ange ett heltal:");
 
-        //            // Assert
-        //            Assert.Equal(42, actual);
-        //        }
+            // Assert
+            Assert.Equal(42, actual);
+        }
 
-        //        [Fact]
-        //        public void GetInputKeepsTryingOnNonValidInteger()
-        //        {
-        //            // Arrange
-        //            var mock = new Mock<IConsoleWrapper>();
-        //            var expected = "42";
-        //            mock.SetupSequence(x => x.ReadLine())
-        //                .Returns("inte ett heltal")
-        //                .Returns("inte heller ett heltal")
-        //                .Returns("")
-        //                .Returns(expected);
-        //            var sut = new UserInteractionWrapper(mock.Object);
+        [Fact]
+        public void GetInputKeepsTryingOnNonValidInteger()
+        {
+            // Arrange
+            var mock = new Mock<IConsoleWrapper>();
+            var expected = "42";
+            mock.SetupSequence(x => x.ReadLine())
+                .Returns("inte ett heltal")
+                .Returns("inte heller ett heltal")
+                .Returns("")
+                .Returns(expected);
+            var sut = new UserInteractionWrapper(mock.Object);
 
-        //            // Act
-        //            var actual = sut.GetIntInput("Ange ett heltal:");
+            // Act
+            var actual = sut.GetIntInput("Ange ett heltal:");
 
-        //            // Assert
-        //            Assert.Equal(42, actual);
-        //            mock.Verify(x => x.ReadLine(), Times.Exactly(4));
-        //        }
+            // Assert
+            Assert.Equal(42, actual);
+            mock.Verify(x => x.ReadLine(), Times.Exactly(4));
+        }
     }
 }
