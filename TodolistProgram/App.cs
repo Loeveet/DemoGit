@@ -35,17 +35,17 @@ namespace TodolistProgram
             switch (choice)
             {
                 case "a":
-                    var title = ui.GetInput("What needs to be done? ");
-                    var description = ui.GetInput("Add a description, how/when? ");
+                    var title = ui.GetStringInput("What needs to be done? ");
+                    var description = ui.GetStringInput("Add a description, how/when? ");
                     todo.AddTodo(title, description);
                     break;
                 case "m":
-                    var index = ui.GetInput("Choose index to mark as complete");
+                    var index = ui.GetStringInput("Choose index to mark as complete");
                     var todoItem = todo.GetTodoItemByIndex(Convert.ToInt32(index));
                     todo.UpdateTodoStatusToComplete(todoItem);
                     break;
                 case "n":
-                    index = ui.GetInput("Choose index to mark as incomplete");
+                    index = ui.GetStringInput("Choose index to mark as incomplete");
                     todoItem = todo.GetTodoItemByIndex(Convert.ToInt32(index));
                     todo.UpdateTodoStatusToInComplete(todoItem);
                     break;
@@ -62,7 +62,7 @@ namespace TodolistProgram
                     ui.PrintTodoList(inCompleteTodos);
                     break;
                 case "r":
-                    index = ui.GetInput("Choose index to remove. ");
+                    index = ui.GetStringInput("Choose index to remove. ");
                     todo.RemoveTodo(Convert.ToInt32(index));
                     break;
                 default:

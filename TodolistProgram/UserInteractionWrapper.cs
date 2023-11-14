@@ -27,17 +27,6 @@ namespace Todo
             return choice.ToLower();
         }
 
-        public string GetInput(string instruction)
-        {
-            consoleWrapper.WriteLine($"{instruction}");
-
-            var input = consoleWrapper.ReadLine();
-
-            if (string.IsNullOrEmpty(input))
-                throw new ArgumentNullException("...");
-
-            return input;
-        }
 
         public void PrintChoiceMenu()
         {
@@ -81,6 +70,24 @@ namespace Todo
             }
 
             return value;
+        }
+        public string GetStringInput(string prompt)
+        {
+            string input = null;
+
+            consoleWrapper.WriteLine(prompt);
+
+            while (string.IsNullOrWhiteSpace(input))
+            {
+                input = consoleWrapper.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(input))
+                {
+                    consoleWrapper.WriteLine("Incorrect input, please try again");
+                    consoleWrapper.WriteLine(prompt);
+                }
+            }
+            return input;
         }
     }
 }

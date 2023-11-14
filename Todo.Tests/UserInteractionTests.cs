@@ -21,7 +21,7 @@ namespace Todo.Tests
             var sut = new UserInteractionWrapper(mock.Object);
 
             // Act
-            var actual = sut.GetInput("Vad heter du?");
+            var actual = sut.GetStringInput("Vad heter du?");
 
             // Assert
             Assert.Equal(expected, actual);
@@ -41,7 +41,7 @@ namespace Todo.Tests
             var sut = new UserInteractionWrapper(mock.Object);
 
             // Act
-            var actual = sut.GetInput("Vad heter du?");
+            var actual = sut.GetStringInput("Vad heter du?");
 
             // Assert
             Assert.Equal(expected, actual);
@@ -86,12 +86,12 @@ namespace Todo.Tests
             // Act och Assert
             if (expectedExceptionType == null)
             {
-                var acutal = sut.GetInput(instruction);
+                var acutal = sut.GetStringInput(instruction);
                 Assert.Equal(expected, acutal);
             }
             else
             {
-                Assert.Throws(expectedExceptionType, () => sut.GetInput(instruction));
+                Assert.Throws(expectedExceptionType, () => sut.GetStringInput(instruction));
             }
         }
 

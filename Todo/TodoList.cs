@@ -27,6 +27,8 @@ namespace Todo
         public TodoItem GetTodoItemByIndex(int index)
         {
             var allTodos = _todoListStorage.GetAllTodos();
+            if (allTodos.Count < index + 1)
+                throw new InvalidOperationException("The index doesn't exist");
 
             return allTodos[index];
         }
