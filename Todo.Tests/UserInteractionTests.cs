@@ -11,21 +11,21 @@ namespace Todo.Tests
 {
     public class UserInteractionTests
     {
-        //        [Fact]
-        //        public void GetInputWorksWhenUserInputsString()
-        //        {
-        //            // Arrange
-        //            var mock = new Mock<IConsoleWrapper>();
-        //            var expected = "Daniel";
-        //            mock.Setup(x => x.ReadLine()).Returns(expected);
-        //            var sut = new UserInteractionWrapper(mock.Object);
+        [Fact]
+        public void GetInputWorksWhenUserInputsString()
+        {
+            // Arrange
+            var mock = new Mock<IConsoleWrapper>();
+            var expected = "Daniel";
+            mock.Setup(x => x.ReadLine()).Returns(expected);
+            var sut = new UserInteractionWrapper(mock.Object);
 
-        //            // Act
-        //            var actual = sut.GetStringInput("Vad heter du?");
+            // Act
+            var actual = sut.GetStringInput("Vad heter du?");
 
-        //            // Assert
-        //            Assert.Equal(expected, actual);
-        //        }
+            // Assert
+            Assert.Equal(expected, actual);
+        }
 
         //        [Fact]
         //        public void GetInputKeepsTryingOnEmpty()
