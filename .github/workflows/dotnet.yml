@@ -23,20 +23,8 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
 
-
-    - name: Build Todolist Program
-      run: dotnet build ./Numberverification/todolistprogram/todo.cli.csproj --no-restore
-
-    - name: Build Todo
-      run: dotnet build ./Numberverification/todo/todo.core.csproj --no-restore
-
-    - name: Build and Test Todo.Tests
-      run: dotnet test ./Numberverification/todo.tests/todo.tests.csproj --no-restore --verbosity normal
-   # - name: Build and Test
-   #   run: dotnet test ./Numberverification/todo/todo.csproj ./Numberverification/todolistprogram/todolistprogram.csproj ./Numberverification/todo.tests/todo.tests.csproj --no-restore
-
-   # - name: Build
-   #   run: dotnet build --no-restore
-   # - name: Test
-   #   run: dotnet test --no-build --verbosity normal
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
       
