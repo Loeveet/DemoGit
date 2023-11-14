@@ -27,26 +27,26 @@ namespace Todo.Tests
             Assert.Equal(expected, actual);
         }
 
-        //        [Fact]
-        //        public void GetInputKeepsTryingOnEmpty()
-        //        {
-        //            // Arrange
-        //            var mock = new Mock<IConsoleWrapper>();
-        //            var expected = "Daniel";
-        //            mock.SetupSequence(x => x.ReadLine())
-        //                .Returns("")
-        //                .Returns("")
-        //                .Returns("")
-        //                .Returns(expected);
-        //            var sut = new UserInteractionWrapper(mock.Object);
+        [Fact]
+        public void GetInputKeepsTryingOnEmpty()
+        {
+            // Arrange
+            var mock = new Mock<IConsoleWrapper>();
+            var expected = "Daniel";
+            mock.SetupSequence(x => x.ReadLine())
+                .Returns("")
+                .Returns("")
+                .Returns("")
+                .Returns(expected);
+            var sut = new UserInteractionWrapper(mock.Object);
 
-        //            // Act
-        //            var actual = sut.GetStringInput("Vad heter du?");
+            // Act
+            var actual = sut.GetStringInput("Vad heter du?");
 
-        //            // Assert
-        //            Assert.Equal(expected, actual);
-        //            mock.Verify(x => x.ReadLine(), Times.Exactly(4));
-        //        }
+            // Assert
+            Assert.Equal(expected, actual);
+            mock.Verify(x => x.ReadLine(), Times.Exactly(4));
+        }
 
         //        //[Fact]
         //        //public void Test_UserInteraction_GetUserInput_Sequential()
