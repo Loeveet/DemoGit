@@ -1,0 +1,11 @@
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\UserAuthentcator\bin\Debug\net7.0\UserAuthenticator.deps.json
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\UserAuthentcator\bin\Debug\net7.0\UserAuthenticator.dll
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\UserAuthentcator\bin\Debug\net7.0\UserAuthenticator.pdb
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\UserAuthentcator\obj\Debug\net7.0\UserAuthenticator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\UserAuthentcator\obj\Debug\net7.0\UserAuthenticator.AssemblyInfoInputs.cache
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\UserAuthentcator\obj\Debug\net7.0\UserAuthenticator.AssemblyInfo.cs
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\UserAuthentcator\obj\Debug\net7.0\UserAuthenticator.csproj.CoreCompileInputs.cache
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\UserAuthentcator\obj\Debug\net7.0\UserAuthenticator.dll
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\UserAuthentcator\obj\Debug\net7.0\refint\UserAuthenticator.dll
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\UserAuthentcator\obj\Debug\net7.0\UserAuthenticator.pdb
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\UserAuthentcator\obj\Debug\net7.0\ref\UserAuthenticator.dll

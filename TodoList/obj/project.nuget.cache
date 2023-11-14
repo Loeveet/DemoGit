@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "OqQHJe6I8G2xfRxclU1sY4B3HnITf+0AjxyLCwulv6bnOiHHSUlT+vMxh/bUHc3N+x3rffwiiP2v8GbA8bQ8UA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\robin\\OneDrive\\Skrivbord\\Plugg\\Cleancode & devOps\\Tester\\Numberverification\\TodoList\\TodoList.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\robin\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\robin\\.nuget\\packages\\moq\\4.20.69\\moq.4.20.69.nupkg.sha512",
+    "C:\\Users\\robin\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,14 @@
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\bin\Debug\net7.0\Numberverification.exe
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\bin\Debug\net7.0\Numberverification.deps.json
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\bin\Debug\net7.0\Numberverification.runtimeconfig.json
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\bin\Debug\net7.0\Numberverification.dll
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\bin\Debug\net7.0\Numberverification.pdb
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\obj\Debug\net7.0\Numberverification.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\obj\Debug\net7.0\Numberverification.AssemblyInfoInputs.cache
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\obj\Debug\net7.0\Numberverification.AssemblyInfo.cs
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\obj\Debug\net7.0\Numberverification.csproj.CoreCompileInputs.cache
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\obj\Debug\net7.0\Numberverification.dll
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\obj\Debug\net7.0\refint\Numberverification.dll
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\obj\Debug\net7.0\Numberverification.pdb
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\obj\Debug\net7.0\Numberverification.genruntimeconfig.cache
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Numberverification\obj\Debug\net7.0\ref\Numberverification.dll

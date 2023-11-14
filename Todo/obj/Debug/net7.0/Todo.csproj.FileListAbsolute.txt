@@ -1,0 +1,11 @@
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Todo\bin\Debug\net7.0\Todo.deps.json
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Todo\bin\Debug\net7.0\Todo.dll
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Todo\bin\Debug\net7.0\Todo.pdb
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Todo\obj\Debug\net7.0\Todo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Todo\obj\Debug\net7.0\Todo.AssemblyInfoInputs.cache
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Todo\obj\Debug\net7.0\Todo.AssemblyInfo.cs
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Todo\obj\Debug\net7.0\Todo.csproj.CoreCompileInputs.cache
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Todo\obj\Debug\net7.0\Todo.dll
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Todo\obj\Debug\net7.0\refint\Todo.dll
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Todo\obj\Debug\net7.0\Todo.pdb
+C:\Users\robin\OneDrive\Skrivbord\Plugg\Cleancode & devOps\Tester\Numberverification\Todo\obj\Debug\net7.0\ref\Todo.dll
