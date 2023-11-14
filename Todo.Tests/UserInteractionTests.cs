@@ -141,7 +141,7 @@ namespace Todo.Tests
             var expected = "42";
             mock.SetupSequence(x => x.ReadLine())
                 .Returns(expected);
-            var sut = new UserInteraction(mock.Object);
+            var sut = new UserInteractionWrapper(mock.Object);
 
             // Act
             var actual = sut.GetIntInput("Ange ett heltal:");

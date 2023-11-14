@@ -68,5 +68,19 @@ namespace Todo
                 count++;
             }
         }
+        public int GetIntInput(string prompt)
+        {
+            int value;
+
+            consoleWrapper.WriteLine(prompt);
+
+            while (!int.TryParse(consoleWrapper.ReadLine(), out value))
+            {
+                consoleWrapper.WriteLine("Incorrect input, please enter a valid integer.");
+                consoleWrapper.WriteLine(prompt);
+            }
+
+            return value;
+        }
     }
 }
