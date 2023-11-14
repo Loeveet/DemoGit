@@ -48,52 +48,52 @@ namespace Todo.Tests
             mock.Verify(x => x.ReadLine(), Times.Exactly(4));
         }
 
-        //        //[Fact]
-        //        //public void Test_UserInteraction_GetUserInput_Sequential()
-        //        //{
-        //        //    // Arrange
-        //        //    var mock = new Mock<IConsoleWrapper>();
+        //[Fact]
+        //public void Test_UserInteraction_GetUserInput_Sequential()
+        //{
+        //    // Arrange
+        //    var mock = new Mock<IConsoleWrapper>();
 
-        //        //    var sequence = new MockSequence();
+        //    var sequence = new MockSequence();
 
-        //        //    mock.Setup(x =>
-        //        //        x.ReadLine("Ange titel: ")).Returns("Vattna blommorna");
+        //    mock.Setup(x =>
+        //        x.ReadLine("Ange titel: ")).Returns("Vattna blommorna");
 
 
-        //        //    var sut = new UserInteractionWrapper<mock.Object>();
+        //    var sut = new UserInteractionWrapper<mock.Object>();
 
-        //        //    //Act
-        //        //    var result1 = sut.GetInput("Ange titel: ");
-        //        //    var result2 = sut.GetInput("Ange beskrivning: ");
+        //    //Act
+        //    var result1 = sut.GetInput("Ange titel: ");
+        //    var result2 = sut.GetInput("Ange beskrivning: ");
 
-        //        //    // Assert
-        //        //    Assert.Equal("Vattna blommorna", result1);
-        //        //    Assert.Equal("Alla blommor utom de i köket", result2);
-        //        //}
+        //    // Assert
+        //    Assert.Equal("Vattna blommorna", result1);
+        //    Assert.Equal("Alla blommor utom de i köket", result2);
+        //}
 
-        //        [Theory]
-        //        [InlineData("Daniel", "Vad heter du?")] 
-        //        [InlineData("", "Vad heter du?", typeof(ArgumentNullException))] 
-        //        [InlineData(null, "Vad heter du?", typeof(ArgumentNullException))]
-        //        public void GetInputHandlesDifferentScenarios(string expected, string instruction, Type expectedExceptionType = null)
-        //        {
-        //            // Arrange
-        //            var mock = new Mock<IConsoleWrapper>();
-        //            mock.Setup(x => x.ReadLine())
-        //                .Returns(expected);
-        //            var sut = new UserInteractionWrapper(mock.Object);
+        [Theory]
+        [InlineData("Daniel", "Vad heter du?")]
+        [InlineData("", "Vad heter du?", typeof(ArgumentNullException))]
+        [InlineData(null, "Vad heter du?", typeof(ArgumentNullException))]
+        public void GetInputHandlesDifferentScenarios(string expected, string instruction, Type expectedExceptionType = null)
+        {
+            // Arrange
+            var mock = new Mock<IConsoleWrapper>();
+            mock.Setup(x => x.ReadLine())
+                .Returns(expected);
+            var sut = new UserInteractionWrapper(mock.Object);
 
-        //            // Act och Assert
-        //            if (expectedExceptionType == null)
-        //            {
-        //                var acutal = sut.GetStringInput(instruction);
-        //                Assert.Equal(expected, acutal);
-        //            }
-        //            else
-        //            {
-        //                Assert.Throws(expectedExceptionType, () => sut.GetStringInput(instruction));
-        //            }
-        //        }
+            // Act och Assert
+            if (expectedExceptionType == null)
+            {
+                var acutal = sut.GetStringInput(instruction);
+                Assert.Equal(expected, acutal);
+            }
+            else
+            {
+                Assert.Throws(expectedExceptionType, () => sut.GetStringInput(instruction));
+            }
+        }
 
         //        [Fact]
         //        public void GetTodoItemByIndex_IndexWithinRange_ReturnsTodoItem()
