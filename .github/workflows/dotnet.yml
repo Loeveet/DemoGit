@@ -22,11 +22,13 @@ jobs:
         dotnet-version: 7.0.x
     - name: Restore dependencies
       run: dotnet restore
-    - name: Build Todo
-      run: dotnet build ./Numberverification/todo/todo.core.csproj --no-restore
+
 
     - name: Build Todolist Program
       run: dotnet build ./Numberverification/todolistprogram/todo.cli.csproj --no-restore
+
+    - name: Build Todo
+      run: dotnet build ./Numberverification/todo/todo.core.csproj --no-restore
 
     - name: Build and Test Todo.Tests
       run: dotnet test ./Numberverification/todo.tests/todo.tests.csproj --no-restore --verbosity normal
