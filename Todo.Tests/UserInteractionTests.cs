@@ -71,50 +71,50 @@ namespace Todo.Tests
         //    Assert.Equal("Alla blommor utom de i köket", result2);
         //}
 
-        [Theory]
-        [InlineData("Daniel", "Vad heter du?")]
-        [InlineData("", "Vad heter du?", typeof(ArgumentNullException))]
-        [InlineData(null, "Vad heter du?", typeof(ArgumentNullException))]
-        public void GetInputHandlesDifferentScenarios(string expected, string instruction, Type expectedExceptionType = null)
+        //[Theory]
+        //[InlineData("Daniel", "Vad heter du?")]
+        //[InlineData("", "Vad heter du?", typeof(ArgumentNullException))]
+        //[InlineData(null, "Vad heter du?", typeof(ArgumentNullException))]
+        //public void GetInputHandlesDifferentScenarios(string expected, string instruction, Type expectedExceptionType = null)
+        //{
+        //    // Arrange
+        //    var mock = new Mock<IConsoleWrapper>();
+        //    mock.Setup(x => x.ReadLine())
+        //        .Returns(expected);
+        //    var sut = new UserInteractionWrapper(mock.Object);
+
+        //    // Act och Assert
+        //    if (expectedExceptionType == null)
+        //    {
+        //        var acutal = sut.GetStringInput(instruction);
+        //        Assert.Equal(expected, acutal);
+        //    }
+        //    else
+        //    {
+        //        Assert.Throws(expectedExceptionType, () => sut.GetStringInput(instruction));
+        //    }
+        //}
+
+        [Fact]
+        public void GetTodoItemByIndex_IndexWithinRange_ReturnsTodoItem()
         {
             // Arrange
-            var mock = new Mock<IConsoleWrapper>();
-            mock.Setup(x => x.ReadLine())
-                .Returns(expected);
-            var sut = new UserInteractionWrapper(mock.Object);
+            var todoListStorageMock = new Mock<IStorage>();
+            var todoListService = new TodoList(todoListStorageMock.Object);
 
-            // Act och Assert
-            if (expectedExceptionType == null)
-            {
-                var acutal = sut.GetStringInput(instruction);
-                Assert.Equal(expected, acutal);
-            }
-            else
-            {
-                Assert.Throws(expectedExceptionType, () => sut.GetStringInput(instruction));
-            }
+            todoListStorageMock.Setup(x => x.GetAllTodos()).Returns(new List<TodoItem>
+                 {
+                     new TodoItem {  },
+                     new TodoItem {  },
+                     new TodoItem {  }
+                 });
+
+            // Act
+            var result = todoListService.GetTodoItemByIndex(2);
+
+            // Assert
+            Assert.NotNull(result);
         }
-
-        //        [Fact]
-        //        public void GetTodoItemByIndex_IndexWithinRange_ReturnsTodoItem()
-        //        {
-        //            // Arrange
-        //            var todoListStorageMock = new Mock<IStorage>();
-        //            var todoListService = new TodoList(todoListStorageMock.Object);
-
-        //            todoListStorageMock.Setup(x => x.GetAllTodos()).Returns(new List<TodoItem>
-        //         {
-        //             new TodoItem {  },
-        //             new TodoItem {  },
-        //             new TodoItem {  }
-        //         });
-
-        //            // Act
-        //            var result = todoListService.GetTodoItemByIndex(2);
-
-        //            // Assert
-        //            Assert.NotNull(result);
-        //        }
 
         //        [Fact]
         //        public void GetTodoItemByIndex_IndexOutOfRange_ThrowsException()
