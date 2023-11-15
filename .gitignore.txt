@@ -1,0 +1,1 @@
+cmdlet Write-Output at command pipeline position 1

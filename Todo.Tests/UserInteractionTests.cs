@@ -16,7 +16,7 @@ namespace Todo.Tests
         {
             // Arrange
             var mock = new Mock<IConsoleWrapper>();
-            var expected = "Maja";
+            var expected = "Robin";
             mock.Setup(x => x.ReadLine()).Returns(expected);
             var sut = new UserInteractionWrapper(mock.Object);
 
