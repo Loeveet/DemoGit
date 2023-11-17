@@ -10,10 +10,11 @@ jobs:
         dotnet-version: [8.0, 7.0, 6.0]
 
     steps:
+      - uses: actions/checkout@v.3
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: ${{matrix.dotnet-version}}
+          version: ${{matrix.dotnet-version}}
 
       - name: Restore dependencies
         run: dotnet restore
