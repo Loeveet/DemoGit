@@ -14,7 +14,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with: 
-          version: ${{matrix.version}}
+          version: ${{matrix.dotnet-version}}
 
       - name: Restore dependencies
         run: dotnet restore ./Todo.Tests/Todo.Tests.csproj
