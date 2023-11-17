@@ -1,0 +1,26 @@
+name: Build on Different .NET Versions and Linux
+
+on: workflow_dispatch
+
+
+jobs:
+  build: 
+    runs-on: ubuntu.latest
+    strategy:
+      matrix:
+        dotnet-version: [7.0, 6.0]
+        
+    steps:
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with: 
+          version: ${{matrix.version}}
+
+      - name: Restore dependencies
+        run: dotnet restore ./Todo.Tests/Todo.Tests.csproj
+  
+      - name: Build
+        run: dotnet build ./Todo.Tests/Todo.Tests.csproj --no-restore
+  
+      - name: Run tests 
+        run: dotnet test ./Todo.Tests/Todo.Tests.csproj --no-build --logger "html" --results-directory "test_results"
