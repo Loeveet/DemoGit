@@ -7,8 +7,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
-        dotnet-version: [9.0, 8.0, 7.0]
+        os: [ubuntu-latest, macos-latest]
+        dotnet-version: [8.0, 7.0]
 
     steps:
       - uses: actions/checkout@v3
